@@ -9,4 +9,5 @@ class Sorting
 {
 public:
     int Distinct(vector<int> &A);
+    int MaxProductOfThree(vector<int> &A);
 };
