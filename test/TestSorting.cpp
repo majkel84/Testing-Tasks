@@ -48,3 +48,10 @@ TEST_F(TestSorting, checkMaxOfThreePositiveAndNegatives)
     result = so.MaxProductOfThree(a);
     ASSERT_EQ(result, 90);
 }
+
+TEST_F(TestSorting, checkNumberOfDiscIntersection)
+{
+    vector<int> a {1, 5, 2, 1, 4, 0};
+    result = so.NumberOfDiscIntersection(a);
+    ASSERT_EQ(result, 11);
+}

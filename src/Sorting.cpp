@@ -57,3 +57,24 @@ int Sorting::MaxProductOfThree(vector<int> &A)
 
     return solution;
 }
+
+int Sorting::NumberOfDiscIntersection(vector<int> &A)
+{
+    int j, solution = 0;
+
+    for (auto i = A.size()-1; i >= 1; i--)
+        for (j = i-1; j >= 0; j--)
+        {
+            if (solution >= 10000000)
+                return -1;
+            if (i - j < A[i] + A[j])
+            {
+                solution += 1;
+                cout << "i[" << i - 1 << "] " << A[i] << "  ";
+                cout << "j[" << j - 1 << "] " << A[j] << "  ";;
+                cout << "s: " << solution << '\n';
+            }
+        }
+
+    return solution;
+}
