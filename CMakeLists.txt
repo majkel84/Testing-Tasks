@@ -34,7 +34,7 @@ endif()
 
 # Now simply link against gtest or gtest_main as needed. Eg
 
-project(codility)
+project(Testing-Tasks)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
