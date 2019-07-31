@@ -67,7 +67,7 @@ int Sorting::NumberOfDiscIntersection(vector<int> &A)
         {
             if (solution >= 10000000)
                 return -1;
-            if (i - j < A[i] + A[j])
+            if (i - j <= A[i] + A[j])
             {
                 solution += 1;
                 //cout << "i[" << i - 1 << "] " << A[i] << "  ";
